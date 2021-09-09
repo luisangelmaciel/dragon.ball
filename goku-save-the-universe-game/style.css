@@ -1,0 +1,34 @@
+html {
+    overflow: hidden;
+    height: 100%;
+    background: #191919;
+    width: 100%;
+}
+
+#canvas {
+    background: url('img/space_sanxvu.jpg') no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+#canvas.playing {
+    cursor: url('img/aim_red_j9cyuq.png') 17.5 17.5,auto !important;
+}
+
+.full-screen {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    background: url('img/full-screen_szgnei.png') no-repeat;
+    z-index: 10;
+    display: block;
+    right: 10px;
+    bottom: 10px;
+}
+
+.display-topright {
+    position: absolute;
+    right: 0;
+    top: 0
+}

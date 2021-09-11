@@ -25,7 +25,7 @@ img {
     top: 0;
     height: 310px;
     width: 800px;
-    background: url(img/Dragon_Ball_Super.png);
+    background: url("https://luisangelmaciel.github.io/dragon.ball/loader/img/Dragon_Ball_Super.png");
     filter: grayscale(100%);
 }
 

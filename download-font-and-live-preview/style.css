@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Saiyan-Sans";
+    src: url("https://luisangelmaciel.github.io/dragon.ball/fonts/Saiyan-Sans.ttf");
+}
+
+input[type='text'] {
+    width: 400px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+}
+
+.Saiyan-Sans {
+    font-size: 65px;
+    text-align: center;
+    font-family: "Saiyan-Sans";
+}

@@ -1,0 +1,98 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: darkred;
+}
+
+#dragonball {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+#dragonball #inside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#dragonball #shines {
+  border-radius: 50%;
+  height: 80%;
+  width: 80%;
+  background: linear-gradient(rgba(255, 255, 255, 0.8) 10%, transparent 50%);
+  position: absolute;
+  top: 0;
+  filter: blur(9px);
+  -webkit-filter: blur(9px);
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2%;
+}
+#dragonball #gradient-bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#FFFE00, #F06104);
+  background-size: 120%;
+  background-position: center;
+  position: relative;
+}
+#dragonball #gradient-bg:before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  height: 90%;
+  width: 90%;
+  background: radial-gradient(rgba(240, 97, 4, 0.75) 80%, transparent 85%);
+  mix-blend-mode: multiply;
+  filter: blur(15px);
+  -webkit-filter: blur(15px);
+}
+#dragonball #gradient-bg:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(transparent 60%, #fea200 72%);
+  background-size: cover;
+  top: 0;
+}
+#dragonball #stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#dragonball #stars .star {
+  color: darkred;
+  font-size: 55px;
+  position: absolute;
+}
+#dragonball #stars .star:first-child {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  mix-blend-mode: multiply;
+}
+#dragonball #outside {
+  width: 105%;
+  height: 105%;
+  border-radius: 50%;
+  background: #fffe66;
+  margin: -2.5% 0 0 -2.5%;
+  position: absolute;
+  filter: blur(15px);
+  -webkit-filter: blur(15px);
+}

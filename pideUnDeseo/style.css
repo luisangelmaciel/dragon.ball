@@ -1,0 +1,442 @@
+@font-face {
+  font-family:'Saiyan Sans';
+  src:local('Saiyan Sans'),
+      url(https://cdn.rawgit.com/alu0100818208/audios/c337d95d/saiyanfont.ttf?raw=true);
+}
+
+.wishes {
+  margin:0;
+  padding:0;
+  transform:translate(-50px, 100px);
+}
+
+body {
+  margin-bottom:0%;
+  margin-top:0%;
+  margin-left:0%;
+  margin-right:0%;
+  padding:0%;
+  width:100%;
+  background-color:black;
+  display:flex;
+  justify-content:space-between;
+}
+
+#yourwish {
+  font-family:'Saiyan Sans';
+  font-size:500%;
+  letter-spacing:7px;
+  color:white;
+  width:0px;
+  margin:0px;
+  transform:translate(200px, 60px);
+}
+
+#wish {
+  transform:translate(200px, 100px);
+  height:50px;
+  position:absolute;
+  z-index:15;
+}
+
+.kinton {
+  width:70px;
+  height:;
+  transform:translate(210px, -70px);
+  outline:0;
+}
+
+.kinton:hover {
+  filter:drop-shadow(0px 0px 4px orange);
+}
+
+.mywish {
+  font-size:120%;
+  border-radius:10px;
+  border:5px solid grey;
+  padding-left:10px;
+  padding-right:10px;
+  background-color:darkgrey;
+  width:150px;
+  box-shadow:0px 0px 10px orange;
+  outline:0;
+}
+
+.response {
+  font-family:'Saiyan Sans';
+  font-size:400%;
+  letter-spacing:7px;
+  color:white;
+  text-align:right;
+  margin:0px;
+  transform:translate(-140px, 200px);
+  width:300px;
+  height:300px;
+  opacity:0;
+}
+
+.shenlong {
+  background-image:url(http://img03.deviantart.net/c86a/i/2013/206/4/c/shenlong_by_xkyrillx-d6f6bdd.png);
+  opacity:0;
+  background-size:contain;
+  width:450px;
+  height:500px;
+  position:absolute;
+  z-index:10;
+}
+
+.box {
+  margin:0%;
+  left-margin:-50%;
+  padding:0%;
+  width:100%;
+  display:flex;
+  wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  /*background-color:red;*/
+  position:absolute;
+  z-index:10;
+}
+
+.bolas {
+  margin:0%;
+  padding:0%;
+  display:flex;
+  justify-content:flex-start;
+  background-color:transparent;
+  width:100%;
+  align-self:felx-end;
+}
+
+.bolas>div {
+  width:300px;
+  height:300px;
+  border-radius:50%;
+}
+
+.bola {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:500px;
+  height:500px;
+  background-color:darkorange;
+  border-radius:50%;
+  box-shadow:0px 0px 200px darkorange,
+             -10px -10px 100px yellow inset,
+             20px 20px 100px white inset;
+}
+
+.estrella {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: red;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid #B22222;
+  border-left: 100px solid transparent;
+  transform:rotate(35deg);
+  transform:rotate(35deg);
+}
+
+.estrella:before {
+  border-bottom: 80px solid #B22222;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: '';
+  transform:rotate(-35deg);
+  transform:rotate(-35deg);
+}
+
+.estrella:after {
+  position: absolute;
+  display: block;
+  color: #B22222;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid #B22222;
+  border-left: 100px solid transparent;
+  transform:rotate(-70deg);
+  transform:rotate(-70deg);
+  content: '';
+}
+
+/*TRANSFORMACIONES(separadas para no liarla parda)*/
+.bola {
+  transform:scale(0.5);
+}
+
+/*Bola 1 estrella*/
+.estrella1 .transf{
+  transform:scale(0.5);
+}
+
+/*Bola 2 estrellas*/
+.estrella2 .transf:first-of-type {
+  transform:scale(0.5) translate(30px, 0px);
+}
+
+.estrella2 .transf:last-of-type {
+  transform:scale(0.5) translate(-10px, 0px);
+}
+
+/*Bola 3 estrellas*/
+
+.estrella3 .transf:nth-of-type(2) {
+  transform:scale(0.5) translate(0px, -140px);
+}
+
+.estrella3 .transf:nth-of-type(1) {
+  transform:scale(0.5) translate(200px, 130px);
+}
+
+.estrella3 .transf:nth-of-type(3) {
+  transform:scale(0.5) translate(-200px, 130px);
+}
+
+/*Bola 4 estrellas*/
+.estrella4 .transf:nth-of-type(1) {
+  transform:scale(0.5) translate(430px, -130px);
+}
+
+.estrella4 .transf:nth-of-type(2) {
+  transform:scale(0.5) translate(40px, 130px);
+}
+
+.estrella4 .transf:nth-of-type(3) {
+  transform:scale(0.5) translate(-30px, 130px);
+}
+
+.estrella4 .transf:nth-of-type(4) {
+  transform:scale(0.5) translate(-430px, -130px);
+}
+
+/*Bola 5 estrellas*/
+.estrella5 .transf:nth-of-type(1) {
+  transform:scale(0.5) translate(670px, 200px);
+}
+
+.estrella5 .transf:nth-of-type(2) {
+  transform:scale(0.5) translate(180px, -30px);
+}
+
+.estrella5 .transf:nth-of-type(3) {
+  transform:scale(0.5) translate(0px, -190px);
+}  
+
+.estrella5 .transf:nth-of-type(4) {
+  transform:scale(0.5) translate(-180px, -30px);
+}
+
+.estrella5 .transf:nth-of-type(5) {
+  transform:scale(0.5) translate(-670px, 200px);
+}
+
+/*Bola 6 estrellas*/
+.estrella6 .transf:nth-of-type(1) {
+  transform:scale(0.5) translate(990px, -190px);
+}
+
+.estrella6 .transf:nth-of-type(2) {
+  transform:scale(0.5) translate(380px, -30px);
+}
+
+.estrella6 .transf:nth-of-type(3) {
+  transform:scale(0.5) translate(70px, 200px);
+}
+
+.estrella6 .transf:nth-of-type(4) {
+  transform:scale(0.5) translate(-70px, 200px);
+}
+
+.estrella6 .transf:nth-of-type(5) {
+  transform:scale(0.5) translate(-390px, -30px);
+}
+
+.estrella6 .transf:nth-of-type(6) {
+  transform:scale(0.5) translate(-1000px, 20px);
+}
+
+/*Bola 7 estrellas*/
+.estrella7 .transf:nth-of-type(1) {
+  transform:scale(0.5) translate(1060px, -200px);
+}
+
+.estrella7 .transf:nth-of-type(2) {
+  transform:scale(0.5) translate(650px, 200px);
+}
+
+.estrella7 .transf:nth-of-type(3) {
+  transform:scale(0.5) translate(130px, 0px);
+}
+
+.estrella7 .transf:nth-of-type(4) {
+  transform:scale(0.5) translate(0px, 0px);
+}
+
+.estrella7 .transf:nth-of-type(5) {
+  transform:scale(0.5) translate(-130px, 0px);
+}
+
+.estrella7 .transf:nth-of-type(6) {
+  transform:scale(0.5) translate(-650px, 200px);
+}
+
+.estrella7 .transf:nth-of-type(7) {
+  transform:scale(0.5) translate(-1060px, -200px);
+}
+
+/*Posición de las bolas*/
+.bolas {
+  transform:scale(0.5) translate(0px, 0px);
+}
+
+.shenlong {
+  transform:translate(50px, 100px);
+}
+
+.box {
+  transform:translate(-50px, 100px);
+}
+
+.estrella1 {
+  transform: translate(100px, 0px);
+}
+
+.estrella2 {
+  transform: translate(0px, 300px);
+}
+
+.estrella3 {
+  transform: translate(50px, 300px);
+}
+
+.estrella4 {
+  transform: translate(-420px, 0px);
+}
+
+.estrella5 {
+  transform: translate(-350px, 0px);
+}
+
+.estrella6 {
+  transform: translate(-850px, -300px);
+}
+
+.estrella7 {
+  transform: translate(-1500px, -300px);
+}
+
+/*ANIMACIONES*/
+@keyframes cambioTamanio{
+  0%{
+    transform:scale(0.1);
+  }
+  33%{
+    transform:scale(0.2);
+  }
+  66%{
+    transform:scale(0.3);
+  }
+  99%{
+    transform:scale(0.5);
+  }
+}
+
+.bolas {
+  animation:cambioTamanio 2s linear;
+}
+
+@keyframes tintineo {
+  0% {
+    box-shadow:0px 0px 200px darkorange,
+             -10px -10px 100px yellow inset,
+             20px 20px 100px white inset;
+  }
+  25% {
+    box-shadow:0px 0px 400px darkorange,
+             -10px -10px 100px yellow inset,
+             20px 20px 100px white inset;
+  }
+  50% {
+    box-shadow:0px 0px 600px darkorange,
+             -10px -10px 100px yellow inset,
+             20px 20px 100px white inset;
+  }
+  75% {
+    box-shadow:0px 0px 400px darkorange,
+             -10px -10px 100px yellow inset,
+             20px 20px 100px white inset;
+  }
+  100% {
+    box-shadow:0px 0px 200px darkorange,
+             -10px -10px 100px yellow inset,
+             20px 20px 100px white inset;
+  }
+}
+
+.bola {
+  animation:tintineo 0.7s linear infinite;
+}
+
+@keyframes aparicionShenLong {
+  0% {
+    background-image:url(http://img03.deviantart.net/c86a/i/2013/206/4/c/shenlong_by_xkyrillx-d6f6bdd.png);
+    opacity:0;
+  }
+  75% {
+    background-image:url(http://img03.deviantart.net/c86a/i/2013/206/4/c/shenlong_by_xkyrillx-d6f6bdd.png);
+    opacity:0;
+  }
+  100% {
+    background-image:url(http://img03.deviantart.net/c86a/i/2013/206/4/c/shenlong_by_xkyrillx-d6f6bdd.png);
+    opacity:1;
+  }
+}
+
+.shenlong {
+  animation:aparicionShenLong 3s linear;
+  opacity:1;
+}
+
+@keyframes apariciontexto {
+  0% {
+    opacity:0;
+  }
+  75% {
+    opacity:0;
+  }
+  100% {
+    
+    opacity:1;
+  }
+}
+
+#yourwish {
+  animation:apariciontexto 5s linear;
+}
+
+#wish {
+  animation:apariciontexto 5s linear;
+}
+
+.efecto {
+  animation:apariciontexto 2s linear;
+  animation-fill-mode:forwards;
+}
+
+.quitarEfecto {
+  animation:apariciontexto 3s linear reverse;
+}
